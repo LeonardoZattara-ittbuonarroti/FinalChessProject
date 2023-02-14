@@ -2,6 +2,11 @@ public class King implements ChessPiece{
     private int currentX;
     private int currentY;
 
+    public King(){
+        currentX = 4;
+        currentY = 7;
+    }
+
     @Override
     public void move(int x, int y) {
 
