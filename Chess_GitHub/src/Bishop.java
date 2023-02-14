@@ -6,7 +6,7 @@ public class Bishop implements ChessPiece{
         currentX = 2;
         currentY = 7;
     }
-    
+
     @Override
     public void move(int x, int y) {
 
@@ -20,5 +20,21 @@ public class Bishop implements ChessPiece{
     @Override
     public String currentPosition() {
         return null;
+    }
+
+    private boolean isLegal(int x, int y){
+        boolean legal = true;
+        if((x-currentX)*(x-currentX) != (y-currentY)*(y-currentY)){
+            legal = false;
+        }
+        if(legal){
+            if(x>7 || x<0){
+                legal = false;
+            }
+            else if(y>7 || y<0){
+                legal = false;
+            }
+        }
+        return legal;
     }
 }
