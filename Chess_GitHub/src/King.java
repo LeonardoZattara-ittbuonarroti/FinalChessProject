@@ -9,7 +9,10 @@ public class King implements ChessPiece{
 
     @Override
     public void move(int x, int y) {
-
+        if(isLegal(x, y)){
+            currentX = x;
+            currentY = y;
+        }
     }
 
     @Override
