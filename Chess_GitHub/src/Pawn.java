@@ -27,7 +27,8 @@ public class Pawn implements ChessPiece{
 
     @Override
     public String currentPosition() {
-        return null;
+        String result = "The current position of the pawn is: X = "+getCurrentX()+", Y = "+getCurrentY();
+        return result;
     }
 
     private boolean isLegal(int x, int y){
