@@ -1,7 +1,12 @@
 public class Pawn implements ChessPiece{
+    private int currentX;
+    private int currentY;
+    private boolean firstMove;
+
+    
     @Override
     public void move(int x, int y) {
-        
+
     }
 
     @Override
