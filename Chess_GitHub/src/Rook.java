@@ -22,6 +22,27 @@ public class Rook implements ChessPiece{
         return null;
     }
 
+    private boolean isLegal(int x, int y){
+        boolean legal = true;
+        if((x-currentX) != 0 && (y-currentY) != 0){
+            legal = false;
+        }
+        if(legal){
+            if((x-currentX) == 0 && (y-currentY) == 0){
+                legal = false;
+            }
+        }
+        if(legal){
+            if(x>7 || x<0){
+                legal = false;
+            }
+            else if(y>7 || y<0){
+                legal = false;
+            }
+        }
+        return legal;
+    }
+
     public int getCurrentX() {
         return currentX;
     }
