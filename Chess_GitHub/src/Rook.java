@@ -21,4 +21,12 @@ public class Rook implements ChessPiece{
     public String currentPosition() {
         return null;
     }
+
+    public int getCurrentX() {
+        return currentX;
+    }
+
+    public int getCurrentY() {
+        return currentY;
+    }
 }
