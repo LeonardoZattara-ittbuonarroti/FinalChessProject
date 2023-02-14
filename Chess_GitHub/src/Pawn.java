@@ -24,6 +24,29 @@ public class Pawn implements ChessPiece{
         return null;
     }
 
+    private boolean isLegal(int x, int y){
+        boolean legal = true;
+        if(firstMove){
+            if((y-currentY) < 1 || (y-currentY) > 2 || x != currentX){
+                legal = false;
+            }
+        }
+        else{
+            if((y-currentY) != 1 || x != currentX){
+                legal = false;
+            }
+        }
+        if(legal){
+            if(x>7 || x<0){
+                legal = false;
+            }
+            else if(y>7 || y<0){
+                legal = false;
+            }
+        }
+        return legal;
+    }
+
     public int getCurrentX() {
         return currentX;
     }
