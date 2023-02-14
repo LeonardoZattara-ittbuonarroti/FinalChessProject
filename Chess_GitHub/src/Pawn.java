@@ -8,7 +8,7 @@ public class Pawn implements ChessPiece{
         currentY = 6;
         firstMove = true;
     }
-    
+
     @Override
     public void move(int x, int y) {
 
@@ -22,5 +22,13 @@ public class Pawn implements ChessPiece{
     @Override
     public String currentPosition() {
         return null;
+    }
+
+    public int getCurrentX() {
+        return currentX;
+    }
+
+    public int getCurrentY() {
+        return currentY;
     }
 }
