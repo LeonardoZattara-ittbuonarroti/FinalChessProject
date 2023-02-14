@@ -22,7 +22,8 @@ public class King implements ChessPiece{
 
     @Override
     public String currentPosition() {
-        return null;
+        String result = "The current position of the king is: X = "+getCurrentX()+", Y = "+getCurrentY();
+        return result;
     }
 
     private boolean isLegal(int x, int y){
