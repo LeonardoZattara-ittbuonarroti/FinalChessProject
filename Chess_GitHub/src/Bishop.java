@@ -32,6 +32,11 @@ public class Bishop implements ChessPiece{
             legal = false;
         }
         if(legal){
+            if((x-currentX) == 0 && (y-currentY) == 0){
+                legal = false;
+            }
+        }
+        if(legal){
             if(x>7 || x<0){
                 legal = false;
             }
