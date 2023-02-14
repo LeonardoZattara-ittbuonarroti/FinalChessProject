@@ -11,7 +11,13 @@ public class Pawn implements ChessPiece{
 
     @Override
     public void move(int x, int y) {
-
+        if(isLegal(x, y)){
+            currentX = x;
+            currentY = y;
+        }
+        if(firstMove){
+            firstMove = false;
+        }
     }
 
     @Override
