@@ -37,4 +37,12 @@ public class Bishop implements ChessPiece{
         }
         return legal;
     }
+
+    public int getCurrentX() {
+        return currentX;
+    }
+
+    public int getCurrentY() {
+        return currentY;
+    }
 }
