@@ -7,6 +7,13 @@ public class Queen implements ChessPiece{
         currentY = 7;
     }
 
+    public void move(int x, int y) {
+        if(isLegal(x, y)){
+            currentX = x;
+            currentY = y;
+        }
+    }
+
     private boolean isLegal(int x, int y){
         boolean legal = true;
         if(((x-currentX)*(x-currentX) != (y-currentY)*(y-currentY)) && (((x-currentX) != 0) && ((y-currentY) != 0))){
