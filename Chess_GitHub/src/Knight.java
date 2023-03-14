@@ -1,8 +1,10 @@
 public class Knight implements ChessPiece{
+    private int currentX;
+    private int currentY;
 
     @Override
     public void move(int x, int y) {
-        
+
     }
 
     @Override
