@@ -3,6 +3,8 @@ public class Main {
         String[][] board = new String[8][8];
         Bishop b = new Bishop();
         Rook r = new Rook();
+        Knight k = new Knight();
+        Queen q = new Queen();
         King kg = new King();
         Pawn p = new Pawn();
         String out = "";
