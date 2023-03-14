@@ -6,4 +6,12 @@ public class Queen implements ChessPiece{
         currentX = 3;
         currentY = 7;
     }
+
+    public int getCurrentX() {
+        return currentX;
+    }
+
+    public int getCurrentY() {
+        return currentY;
+    }
 }
