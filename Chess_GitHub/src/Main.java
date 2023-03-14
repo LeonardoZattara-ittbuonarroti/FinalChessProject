@@ -46,6 +46,26 @@ public class Main {
         }
         System.out.println(out);
         System.out.println("Mossa dell'alfiere eseguita con successo");
+
+        b.move(1, 6);
+        for(int i=0; i<8; i++){
+            for(int j=0; j<8; j++){
+                board[i][j] = "0";
+            }
+        }
+        board[b.getCurrentY()][b.getCurrentX()] = "B";
+        board[r.getCurrentY()][r.getCurrentX()] = "R";
+        board[kg.getCurrentY()][kg.getCurrentX()] = "K";
+        board[p.getCurrentY()][p.getCurrentX()] = "P";
+        out = "";
+        for(int i=0; i<8; i++){
+            out = out+"\n";
+            for(int j=0; j<8; j++){
+                out = out+board[i][j]+"  ";
+            }
+        }
+        System.out.println(out);
+        System.out.println("Mossa dell'alfiere fallita");
     }
 
 }
