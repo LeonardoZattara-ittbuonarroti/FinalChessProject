@@ -1,2 +1,3 @@
-public class Queen {
+public class Queen implements ChessPiece{
+    
 }
