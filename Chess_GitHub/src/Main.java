@@ -17,6 +17,8 @@ public class Main {
 
         board[b.getCurrentY()][b.getCurrentX()] = "B";
         board[r.getCurrentY()][r.getCurrentX()] = "R";
+        board[k.getCurrentY()][k.getCurrentX()] = "C";
+        board[q.getCurrentY()][q.getCurrentX()] = "Q";
         board[kg.getCurrentY()][kg.getCurrentX()] = "K";
         board[p.getCurrentY()][p.getCurrentX()] = "P";
 
@@ -37,6 +39,8 @@ public class Main {
         }
         board[b.getCurrentY()][b.getCurrentX()] = "B";
         board[r.getCurrentY()][r.getCurrentX()] = "R";
+        board[k.getCurrentY()][k.getCurrentX()] = "C";
+        board[q.getCurrentY()][q.getCurrentX()] = "Q";
         board[kg.getCurrentY()][kg.getCurrentX()] = "K";
         board[p.getCurrentY()][p.getCurrentX()] = "P";
         out = "";
@@ -57,6 +61,8 @@ public class Main {
         }
         board[b.getCurrentY()][b.getCurrentX()] = "B";
         board[r.getCurrentY()][r.getCurrentX()] = "R";
+        board[k.getCurrentY()][k.getCurrentX()] = "C";
+        board[q.getCurrentY()][q.getCurrentX()] = "Q";
         board[kg.getCurrentY()][kg.getCurrentX()] = "K";
         board[p.getCurrentY()][p.getCurrentX()] = "P";
         out = "";
@@ -77,6 +83,8 @@ public class Main {
         }
         board[b.getCurrentY()][b.getCurrentX()] = "B";
         board[r.getCurrentY()][r.getCurrentX()] = "R";
+        board[k.getCurrentY()][k.getCurrentX()] = "C";
+        board[q.getCurrentY()][q.getCurrentX()] = "Q";
         board[kg.getCurrentY()][kg.getCurrentX()] = "K";
         board[p.getCurrentY()][p.getCurrentX()] = "P";
         out = "";
@@ -97,6 +105,8 @@ public class Main {
         }
         board[b.getCurrentY()][b.getCurrentX()] = "B";
         board[r.getCurrentY()][r.getCurrentX()] = "R";
+        board[k.getCurrentY()][k.getCurrentX()] = "C";
+        board[q.getCurrentY()][q.getCurrentX()] = "Q";
         board[kg.getCurrentY()][kg.getCurrentX()] = "K";
         board[p.getCurrentY()][p.getCurrentX()] = "P";
         out = "";
@@ -117,6 +127,8 @@ public class Main {
         }
         board[b.getCurrentY()][b.getCurrentX()] = "B";
         board[r.getCurrentY()][r.getCurrentX()] = "R";
+        board[k.getCurrentY()][k.getCurrentX()] = "C";
+        board[q.getCurrentY()][q.getCurrentX()] = "Q";
         board[kg.getCurrentY()][kg.getCurrentX()] = "K";
         board[p.getCurrentY()][p.getCurrentX()] = "P";
         out = "";
