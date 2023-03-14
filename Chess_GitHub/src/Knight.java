@@ -1,12 +1,10 @@
-public class Pawn implements ChessPiece{
+public class Knight implements ChessPiece{
     private int currentX;
     private int currentY;
-    private boolean firstMove;
 
-    public Pawn(){
-        currentX = 5;
-        currentY = 6;
-        firstMove = true;
+    public Knight(){
+        currentX = 1;
+        currentY = 7;
     }
 
     @Override
@@ -14,9 +12,6 @@ public class Pawn implements ChessPiece{
         if(isLegal(x, y)){
             currentX = x;
             currentY = y;
-        }
-        if(firstMove){
-            firstMove = false;
         }
     }
 
@@ -27,19 +22,17 @@ public class Pawn implements ChessPiece{
 
     @Override
     public String currentPosition() {
-        String result = "The current position of the pawn is: X = "+getCurrentX()+", Y = "+getCurrentY();
+        String result = "The current position of the knight is: X = "+getCurrentX()+", Y = "+getCurrentY();
         return result;
     }
 
     private boolean isLegal(int x, int y){
         boolean legal = true;
-        if(firstMove){
-            if((currentY-y) < 1 || (currentY-y) > 2 || x != currentX){
-                legal = false;
-            }
+        if(((x-currentX)*(x-currentX) - (y-currentY)*(y-currentY) != 3) && ((x-currentX)*(x-currentX) - (y-currentY)*(y-currentY) != -3)){
+            legal = false;
         }
-        else{
-            if((currentY-y) != 1 || x != currentX){
+        if(legal){
+            if((x-currentX) == 0 && (y-currentY) == 0){
                 legal = false;
             }
         }
