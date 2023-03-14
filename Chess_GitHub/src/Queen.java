@@ -14,6 +14,17 @@ public class Queen implements ChessPiece{
         }
     }
 
+    @Override
+    public String checkMoves(String[][] board) {
+        return null;
+    }
+
+    @Override
+    public String currentPosition() {
+        String result = "The current position of the queen is: X = "+getCurrentX()+", Y = "+getCurrentY();
+        return result;
+    }
+
     private boolean isLegal(int x, int y){
         boolean legal = true;
         if(((x-currentX)*(x-currentX) != (y-currentY)*(y-currentY)) && (((x-currentX) != 0) && ((y-currentY) != 0))){
