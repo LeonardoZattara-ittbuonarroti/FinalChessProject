@@ -4,7 +4,7 @@ public class Pawn implements ChessPiece{
     private boolean firstMove;
 
     public Pawn(){
-        currentX = 0;
+        currentX = 5;
         currentY = 6;
         firstMove = true;
     }
@@ -34,12 +34,12 @@ public class Pawn implements ChessPiece{
     private boolean isLegal(int x, int y){
         boolean legal = true;
         if(firstMove){
-            if((y-currentY) < 1 || (y-currentY) > 2 || x != currentX){
+            if((currentY-y) < 1 || (currentY-y) > 2 || x != currentX){
                 legal = false;
             }
         }
         else{
-            if((y-currentY) != 1 || x != currentX){
+            if((currentY-y) != 1 || x != currentX){
                 legal = false;
             }
         }
